@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PreferencesWindowController">
+            <connections>
+                <outlet property="defaultBrowserDescriptionField" destination="0cp-3I-TTl" id="cFl-cx-91R"/>
+                <outlet property="profileSelectButton" destination="vLw-0i-4t1" id="fMf-Wm-Jhv"/>
+                <outlet property="setDefaultBrowserButton" destination="pzf-6K-76G" id="bdI-ra-JTO"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="aYx-0k-1zj"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Chromewell" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <rect key="contentRect" x="526" y="388" width="303" height="150"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <value key="minSize" type="size" width="300" height="150"/>
+            <view key="contentView" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="303" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <box verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="oRl-yi-87d">
+                        <rect key="frame" x="20" y="64" width="263" height="5"/>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <font key="titleFont" metaFont="system"/>
+                    </box>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Vcq-0E-IPk">
+                        <rect key="frame" x="18" y="32" width="89" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Default User: " id="g8M-V0-uYd">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vLw-0i-4t1">
+                        <rect key="frame" x="120" y="27" width="166" height="26"/>
+                        <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="a5u-TX-HMJ">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" id="eXY-CS-j19">
+                                <items>
+                                    <menuItem title="Automatic" tag="-1" id="i31-tl-gYF">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem isSeparatorItem="YES" tag="-9999" id="NlM-rB-OP3"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                        <connections>
+                            <action selector="changedChromeUser:" target="-2" id="eG1-lp-TsD"/>
+                        </connections>
+                    </popUpButton>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pzf-6K-76G">
+                        <rect key="frame" x="14" y="102" width="171" height="32"/>
+                        <buttonCell key="cell" type="push" title="Enable &quot;Chromewell&quot;" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="YeY-aO-pnd">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <connections>
+                                <action selector="clickedSetDefaultBrowserButton:" target="-2" id="YnG-04-ANY"/>
+                            </connections>
+                        </buttonCell>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0cp-3I-TTl">
+                        <rect key="frame" x="18" y="84" width="267" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Change system default web browser." id="8FR-fw-0T5">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vLw-0i-4t1" firstAttribute="top" secondItem="oRl-yi-87d" secondAttribute="bottom" constant="15" id="492-HU-P9d"/>
+                    <constraint firstItem="Vcq-0E-IPk" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="OIO-TV-J3u"/>
+                    <constraint firstAttribute="trailing" secondItem="0cp-3I-TTl" secondAttribute="trailing" constant="20" id="RgA-IA-Ffa"/>
+                    <constraint firstAttribute="trailing" secondItem="oRl-yi-87d" secondAttribute="trailing" constant="20" id="Se9-ae-pFg"/>
+                    <constraint firstItem="oRl-yi-87d" firstAttribute="top" secondItem="0cp-3I-TTl" secondAttribute="bottom" constant="17" id="StN-n1-b8T"/>
+                    <constraint firstItem="pzf-6K-76G" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="Sud-7m-WWe"/>
+                    <constraint firstItem="vLw-0i-4t1" firstAttribute="leading" secondItem="Vcq-0E-IPk" secondAttribute="trailing" constant="17" id="aCc-bl-Z6K"/>
+                    <constraint firstItem="0cp-3I-TTl" firstAttribute="top" secondItem="pzf-6K-76G" secondAttribute="bottom" constant="8" id="hOe-x1-j1E"/>
+                    <constraint firstItem="pzf-6K-76G" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" id="i0V-wE-SKc"/>
+                    <constraint firstItem="oRl-yi-87d" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="mSp-p3-3lq"/>
+                    <constraint firstAttribute="trailing" secondItem="vLw-0i-4t1" secondAttribute="trailing" constant="20" id="pN5-9t-Rmi"/>
+                    <constraint firstItem="Vcq-0E-IPk" firstAttribute="top" secondItem="oRl-yi-87d" secondAttribute="bottom" constant="17" id="tvy-Ne-sJx"/>
+                    <constraint firstItem="0cp-3I-TTl" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="xUd-bf-2mO"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="LDf-dG-lsF"/>
+            </connections>
+            <point key="canvasLocation" x="203.5" y="196"/>
+        </window>
+    </objects>
+</document>

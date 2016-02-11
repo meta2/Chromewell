@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		421DD29E1C6652F200A522A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 421DD29D1C6652F200A522A8 /* AppDelegate.m */; };
+		421DD2A11C6652F200A522A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 421DD2A01C6652F200A522A8 /* main.m */; };
+		421DD2A31C6652F200A522A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 421DD2A21C6652F200A522A8 /* Assets.xcassets */; };
+		421DD2A61C6652F200A522A8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 421DD2A41C6652F200A522A8 /* MainMenu.xib */; };
+		421DD2B11C6656D800A522A8 /* ChromeAppAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 421DD2B01C6656D800A522A8 /* ChromeAppAdapter.m */; };
+		421DD2B81C667D8400A522A8 /* PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 421DD2B61C667D8400A522A8 /* PreferencesWindowController.m */; };
+		42DF9DD01C66859600180D40 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DF9DCF1C66859600180D40 /* PreferencesWindow.xib */; };
+		42DF9DD31C6696B200180D40 /* ChromeProfileFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DF9DD21C6696B200180D40 /* ChromeProfileFinder.m */; };
+		42DF9DD61C66970A00180D40 /* ChromeProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DF9DD51C66970A00180D40 /* ChromeProfile.m */; };
+		42DF9DDC1C669CB200180D40 /* NSUserDefaults+Chromewell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DF9DDB1C669CB200180D40 /* NSUserDefaults+Chromewell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		421DD2991C6652F200A522A8 /* Chromewell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chromewell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		421DD29C1C6652F200A522A8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		421DD29D1C6652F200A522A8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		421DD2A01C6652F200A522A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		421DD2A21C6652F200A522A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		421DD2A51C6652F200A522A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		421DD2A71C6652F200A522A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		421DD2AE1C6654DE00A522A8 /* SystemEvents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemEvents.h; sourceTree = "<group>"; };
+		421DD2AF1C6656D800A522A8 /* ChromeAppAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChromeAppAdapter.h; sourceTree = "<group>"; };
+		421DD2B01C6656D800A522A8 /* ChromeAppAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChromeAppAdapter.m; sourceTree = "<group>"; };
+		421DD2B21C66570000A522A8 /* GoogleChrome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleChrome.h; sourceTree = "<group>"; };
+		421DD2B51C667D8400A522A8 /* PreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesWindowController.h; sourceTree = "<group>"; };
+		421DD2B61C667D8400A522A8 /* PreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesWindowController.m; sourceTree = "<group>"; };
+		42DF9DCF1C66859600180D40 /* PreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
+		42DF9DD11C6696B200180D40 /* ChromeProfileFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChromeProfileFinder.h; sourceTree = "<group>"; };
+		42DF9DD21C6696B200180D40 /* ChromeProfileFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChromeProfileFinder.m; sourceTree = "<group>"; };
+		42DF9DD41C66970A00180D40 /* ChromeProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChromeProfile.h; sourceTree = "<group>"; };
+		42DF9DD51C66970A00180D40 /* ChromeProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChromeProfile.m; sourceTree = "<group>"; };
+		42DF9DDA1C669CB200180D40 /* NSUserDefaults+Chromewell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Chromewell.h"; sourceTree = "<group>"; };
+		42DF9DDB1C669CB200180D40 /* NSUserDefaults+Chromewell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Chromewell.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		421DD2961C6652F100A522A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		421DD2901C6652F100A522A8 = {
+			isa = PBXGroup;
+			children = (
+				421DD29B1C6652F200A522A8 /* Chromewell */,
+				421DD29A1C6652F200A522A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		421DD29A1C6652F200A522A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				421DD2991C6652F200A522A8 /* Chromewell.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		421DD29B1C6652F200A522A8 /* Chromewell */ = {
+			isa = PBXGroup;
+			children = (
+				421DD29C1C6652F200A522A8 /* AppDelegate.h */,
+				421DD29D1C6652F200A522A8 /* AppDelegate.m */,
+				421DD2BA1C667D8900A522A8 /* PreferencesWindowController */,
+				421DD2B41C66571B00A522A8 /* Chrome */,
+				42DF9DD91C669C8900180D40 /* UserDefaults */,
+				421DD2B31C66570F00A522A8 /* ScriptingBridge */,
+				421DD2A21C6652F200A522A8 /* Assets.xcassets */,
+				421DD2A41C6652F200A522A8 /* MainMenu.xib */,
+				421DD2A71C6652F200A522A8 /* Info.plist */,
+				421DD29F1C6652F200A522A8 /* Supporting Files */,
+			);
+			path = Chromewell;
+			sourceTree = "<group>";
+		};
+		421DD29F1C6652F200A522A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				421DD2A01C6652F200A522A8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		421DD2B31C66570F00A522A8 /* ScriptingBridge */ = {
+			isa = PBXGroup;
+			children = (
+				421DD2B21C66570000A522A8 /* GoogleChrome.h */,
+				421DD2AE1C6654DE00A522A8 /* SystemEvents.h */,
+			);
+			name = ScriptingBridge;
+			sourceTree = "<group>";
+		};
+		421DD2B41C66571B00A522A8 /* Chrome */ = {
+			isa = PBXGroup;
+			children = (
+				42DF9DD81C66971900180D40 /* App */,
+				42DF9DD71C66971500180D40 /* Profile */,
+			);
+			name = Chrome;
+			sourceTree = "<group>";
+		};
+		421DD2BA1C667D8900A522A8 /* PreferencesWindowController */ = {
+			isa = PBXGroup;
+			children = (
+				421DD2B51C667D8400A522A8 /* PreferencesWindowController.h */,
+				421DD2B61C667D8400A522A8 /* PreferencesWindowController.m */,
+				42DF9DCF1C66859600180D40 /* PreferencesWindow.xib */,
+			);
+			name = PreferencesWindowController;
+			sourceTree = "<group>";
+		};
+		42DF9DD71C66971500180D40 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				42DF9DD41C66970A00180D40 /* ChromeProfile.h */,
+				42DF9DD51C66970A00180D40 /* ChromeProfile.m */,
+				42DF9DD11C6696B200180D40 /* ChromeProfileFinder.h */,
+				42DF9DD21C6696B200180D40 /* ChromeProfileFinder.m */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		42DF9DD81C66971900180D40 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				421DD2AF1C6656D800A522A8 /* ChromeAppAdapter.h */,
+				421DD2B01C6656D800A522A8 /* ChromeAppAdapter.m */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		42DF9DD91C669C8900180D40 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				42DF9DDA1C669CB200180D40 /* NSUserDefaults+Chromewell.h */,
+				42DF9DDB1C669CB200180D40 /* NSUserDefaults+Chromewell.m */,
+			);
+			name = UserDefaults;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		421DD2981C6652F100A522A8 /* Chromewell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 421DD2AA1C6652F200A522A8 /* Build configuration list for PBXNativeTarget "Chromewell" */;
+			buildPhases = (
+				421DD2951C6652F100A522A8 /* Sources */,
+				421DD2961C6652F100A522A8 /* Frameworks */,
+				421DD2971C6652F100A522A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chromewell;
+			productName = Chromewell;
+			productReference = 421DD2991C6652F200A522A8 /* Chromewell.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		421DD2911C6652F100A522A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = 501dev.org;
+				TargetAttributes = {
+					421DD2981C6652F100A522A8 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = MWJF7M8BXF;
+					};
+				};
+			};
+			buildConfigurationList = 421DD2941C6652F100A522A8 /* Build configuration list for PBXProject "Chromewell" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 421DD2901C6652F100A522A8;
+			productRefGroup = 421DD29A1C6652F200A522A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				421DD2981C6652F100A522A8 /* Chromewell */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		421DD2971C6652F100A522A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42DF9DD01C66859600180D40 /* PreferencesWindow.xib in Resources */,
+				421DD2A31C6652F200A522A8 /* Assets.xcassets in Resources */,
+				421DD2A61C6652F200A522A8 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		421DD2951C6652F100A522A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				421DD2A11C6652F200A522A8 /* main.m in Sources */,
+				42DF9DDC1C669CB200180D40 /* NSUserDefaults+Chromewell.m in Sources */,
+				421DD29E1C6652F200A522A8 /* AppDelegate.m in Sources */,
+				421DD2B81C667D8400A522A8 /* PreferencesWindowController.m in Sources */,
+				42DF9DD61C66970A00180D40 /* ChromeProfile.m in Sources */,
+				42DF9DD31C6696B200180D40 /* ChromeProfileFinder.m in Sources */,
+				421DD2B11C6656D800A522A8 /* ChromeAppAdapter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		421DD2A41C6652F200A522A8 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				421DD2A51C6652F200A522A8 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		421DD2A81C6652F200A522A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		421DD2A91C6652F200A522A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		421DD2AB1C6652F200A522A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Chromewell/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.501dev.Chromewell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Chromewell/Chromewell-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		421DD2AC1C6652F200A522A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Chromewell/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.501dev.Chromewell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Chromewell/Chromewell-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		421DD2941C6652F100A522A8 /* Build configuration list for PBXProject "Chromewell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				421DD2A81C6652F200A522A8 /* Debug */,
+				421DD2A91C6652F200A522A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		421DD2AA1C6652F200A522A8 /* Build configuration list for PBXNativeTarget "Chromewell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				421DD2AB1C6652F200A522A8 /* Debug */,
+				421DD2AC1C6652F200A522A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 421DD2911C6652F100A522A8 /* Project object */;
+}
